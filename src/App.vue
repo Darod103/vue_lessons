@@ -1,15 +1,8 @@
 <script setup>
-import { ref } from 'vue';
-const text = ref('');
+const date = new Date().toLocaleDateString();
 </script>
 <template>
-<input 
-    type="text"
-    placeholder="Add text"
-    :value="text"
-    @input="e => text = e.target.value">
-<p>{{ text }}</p>
+<div>{{ date }}</div>
 </template>
-
 <style scoped>
 </style>
